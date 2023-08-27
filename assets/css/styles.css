@@ -952,7 +952,40 @@ img {
 }
 
 /*=============== FOOTER ===============*/
+.footer{
+  background-color: var(--black-color);
+}
 
+.footer__container{
+  padding-block: 3rem 2rem;
+  row-gap: 2.5rem;
+}
+
+.footer__links{
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.footer__link{
+  color: var(--white-color);
+  transition: color .4s;
+}
+
+.footer__link:hover{
+  color: var(--text-color-light);
+}
+
+.footer__copy{
+  color: var(--text-color-light);
+  font-size: var(--small-font-size);
+  text-align: center;
+}
+
+.footer__copy a{
+  color: var(--white-color);
+  font-weigth: var(--font-medium);
+}
 
 /*=============== SCROLL BAR ===============*/
 
