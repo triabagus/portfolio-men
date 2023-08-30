@@ -1125,6 +1125,52 @@ body.dark-theme{
 }
 
 /* For medium devices */
+@media screen and (min-width: 576px){
+  .home__container,
+  .about__container,
+  .projects__container{
+    grid-template-columns: 350px;
+    justify-content: center;
+  }
 
+  .contact__data{
+    width: 350px;
+    padding: 4rem 1.5rem;
+    margin-inline: auto;
+  }
+  .contact__container{
+    grid-template-columns: 500px;
+    justify-content: center;
+  }
+  .contact__group{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+  .contact__social{
+    background-color: transparent;
+  }
+  .contact__social-arrow{
+    filter: invert(1);
+  }
+  .contact__social-description-1{
+    color: var(--text-color);
+  }
+  .contact__social-description-2{
+    color: var(--title-color);
+  }
+  .dark-theme .contact__social-arrow{
+    filter: none;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .services__container{
+    grid-template-columns: repeat(2, 250px);
+  }
+
+  .projects__container{
+    grid-template-columns: repeat(2, 350px);
+  }
+}
 
 /* For large devices */
